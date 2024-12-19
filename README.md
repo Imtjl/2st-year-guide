@@ -134,8 +134,8 @@ cmake -S . -B build -G "Ninja" -DCMAKE_BUILD_TYPE=Release
 ### 1.4 Добавление Fish в PATH
 
 ```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bash_profile source
-~/.bash_profile
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
 ```
 
 ## Шаг 2: Установка Oh My Fish
@@ -149,7 +149,8 @@ curl -L https://get.oh-my.fish | fish
 ### 2.2 Установка Fish как оболочки по умолчанию
 
 ```bash
-echo "exec fish" >> ~/.bash_profile source ~/.bash_profile
+echo "exec fish" >> ~/.bash_profile
+source ~/.bash_profile
 ```
 
 ### 2.3 Установка темы Oh My Fish (по желанию)
